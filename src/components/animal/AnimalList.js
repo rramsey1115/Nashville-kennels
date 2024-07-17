@@ -12,11 +12,10 @@ export const AnimalList = () => {
     getAnimals()
   }, [])
 
-
   return (
     <section className="animals">
       {
-        animals.map(animal => {
+        animals?.map(animal => {
           return (
             <div className="animal" id={`animal--${animal.id}`}>
               <div className="animal__name">
