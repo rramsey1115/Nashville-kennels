@@ -1,11 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import {Kennels} from "./components/Kennels.js"
+import React from "react"
+import ReactDOM from "react-dom"
+import { BrowserRouter as Router } from "react-router-dom"
+import { Kennels } from "./components/Kennels.js"
+import "./index.css"
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <Kennels />
-  </React.StrictMode>
-);
+ReactDOM.render(
+    <React.StrictMode>
+        <Router>
+            <Kennels />
+        </Router>
+    </React.StrictMode>,
+    document.getElementById("root")
+)
